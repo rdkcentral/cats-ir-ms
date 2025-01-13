@@ -16,7 +16,7 @@ mvn spring-boot:run
 
 
 ## Building
-Build the project using mvn clean install. Copy the built jar file into the corresponding directory structure as required by the Dockerfile.
+Build the project using `mvn clean install`. Copy the built jar file into the corresponding directory structure as required by the Dockerfile.
 ```
 docker build -t="/ir-ms" .
 ```
@@ -27,16 +27,16 @@ docker build -t="/ir-ms" .
 The ir-ms.yml file is the configuration file, it must contain the RedRatHub host and port number as well as at least one IR hardware device host such as IRNetBoxes or GlobalCache IP2IR (iTach). IR Hardware devices are specified in blocks of one or more devices as shown below:
 
 ```
-redRatHubHost: 10.21.55.230
+redRatHubHost: 192.168.100.0
 redRatHubPort: 40000
 
 irDevices:
   - type: irNetBox
-    host: 192.168.100.31
+    host: 192.168.100.0
     port: 8080
     maxPorts: 16
   - type: itach
-    host: 192.168.100.35
+    host: 192.168.100.0
     port: 4998
     maxPorts: 3
 ```
