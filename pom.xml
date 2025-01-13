@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cats</groupId>
 	<artifactId>ir-ms</artifactId>
-	<version>24.11.2-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>CATS IR PROJECT</name>
 	<description>Builder project for CATS IR Lib and CATS IR Microservice</description>
